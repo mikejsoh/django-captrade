@@ -1,0 +1,14 @@
+*.pyc
+*~
+__pycache__
+myenv
+db.sqlite3
+/static
+.DS_Store
+
+# Ignore .vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
