@@ -2,7 +2,7 @@
 
 {% block content %}
 <h2>{{ finance }}</h2>
-
+<a href="{% url 'finance_edit' pk=finance.pk %}"><i class="far fa-edit"></i></a>
 <table class="table table-hover table-sm">
     <tbody>
         <tr>

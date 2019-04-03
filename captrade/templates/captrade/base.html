@@ -4,6 +4,8 @@
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'css/custom.css' %}">
 
     <title>Cap and Trade</title>
@@ -11,6 +13,7 @@
 
 <body>
     <div class="container">
+        <a href="{% url 'finance_new' %}"><i class="fas fa-plus"></i></a>
         {% block content %}
         {% endblock %}
     </div>
