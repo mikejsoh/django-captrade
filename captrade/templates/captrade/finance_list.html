@@ -1,9 +1,12 @@
-<html>
-    <head>
-        <title>Cap and Trade</title>
-    </head>
-    <body>
-        <h2>Finance List</h2>
+{% extends 'captrade/base.html' %}
 
-    </body>
-</html>
+{% block content %}
+    <h2>Finance List</h2>
+    <ul class="list-group">
+        {% for finance in finances %}
+            <li class="list-group-item">
+                <a href="{% url 'finance_detail' pk=finance.pk %}">{{ finance }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

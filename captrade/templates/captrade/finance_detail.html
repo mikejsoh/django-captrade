@@ -1,0 +1,53 @@
+{% extends 'captrade/base.html' %}
+
+{% block content %}
+<h2>{{ finance }}</h2>
+
+<table class="table table-hover table-sm">
+    <tbody>
+        <tr>
+            <th style="width: 50%" scope="row">Finance ID</th>
+            <td>{{ finance.finance_id }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Company ID</th>
+            <td>{{ finance.company_id}}</td>
+        </tr>
+        <tr>
+            <th scope="row">Year</th>
+            <td>{{ finance.year }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Production Level</th>
+            <td>{{ finance.productionLevel }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Sales Price</th>
+            <td>{{ finance.salesPrice }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Unit Cost</th>
+            <td>{{ finance.unitCost }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Total Production Cost</th>
+            <td>{{ finance.totalProductionCost }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Gross Margin</th>
+            <td>{{ finance.grossMargin }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Fixed Cost</th>
+            <td>{{ finance.fixedCost }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Profit</th>
+            <td>{{ finance.profit }}</td>
+        </tr>
+
+    </tbody>
+</table>
+
+
+{% endblock %}
